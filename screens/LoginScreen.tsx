@@ -12,11 +12,13 @@ type Props = {
 const LoginScreen: React.FC<Props> = ({ navigation }) => {
   return (
     <View style={styles.container}>
+      <View style={styles.loginContainer}>
       <Text>Login Screen</Text>
       <Button
         title="Go to Home"
         onPress={() => navigation.navigate('Home')}
       />
+      </View>
     </View>
   );
 };
@@ -25,8 +27,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-end', // all items will flex from bottom to top
+    backgroundColor: '#1C4748',
   },
+  loginContainer: {
+    backgroundColor: '#358C8E',
+    width: '100%',
+    height: '80%',
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
+   
+  }
 });
 
 export default LoginScreen;
