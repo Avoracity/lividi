@@ -1,24 +1,26 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'; // Import NativeStackNavigationProp
 
-
-type Props = {
+// Define Props interface (no equals sign needed)
+interface Props {
     navigation: NativeStackNavigationProp<any, 'Login'>; 
      // any is the type of the param list
      // 'Login' is the name to identify the navigation stack that is being worked on
-  };
-  
-const SplashScreen: React.FC<Props> = ({ navigation }) => {
+}
+
+const SplashScreen = ({ navigation }: Props): JSX.Element => {  // Corrected return type and arrow function
     return (
         <View style={styles.container}>
-
+            {/* Add your content here */}
         </View>
-          );
-        };
+    );
+};
 
-       const styles = StyleSheet.create({
-            container: {
-                flex: 1,
-            }
-       });
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    }
+});
+
+export default SplashScreen;
