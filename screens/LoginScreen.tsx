@@ -9,7 +9,7 @@ type Props = {
   navigation: NativeStackNavigationProp<any, 'Login'>;
 };
 
-const LoginScreen: React.FC<Props> = ({ navigation }) => {
+const LoginScreen = ({navigation}: Props ) => {
   const [isAppleAvailable, setIsAppleAvailable] = useState<boolean>(false);
 
   // Configure Google sign-in
