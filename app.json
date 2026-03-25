@@ -3,8 +3,7 @@
     "name": "Lividi",
     "slug": "Lividi",
     "version": "1.0.0",
-    "scheme": "Lividi",  
-
+    "scheme": "Lividi",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -19,14 +18,14 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.yourapp.bundle"
-
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff",
-          "package": "com.yourapp.package"
-      }
+        "package": "com.yourapp.package"
+      },
+      "package": "com.avo.lividi"
     },
     "web": {
       "favicon": "./assets/favicon.png"
